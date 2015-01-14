@@ -13,3 +13,5 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem "bootstrap-sass"
 gem "autoprefixer-rails"
+gem "omniauth-google-oauth2", "~> 0.2.1"
+gem 'dotenv-rails', '~> 1.0.2', groups: [:development, :test]

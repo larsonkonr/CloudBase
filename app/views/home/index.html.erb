@@ -1,11 +1,19 @@
 <div id="main_page">
+  <div>
+    <% if current_user %>
+    Signed in as <strong><%= current_user.name %></strong>!
+    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+    <% else %>
+    <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
+    <% end %>
+  </div>
 
 <header id="header" class="clearfix">
 <a href="/" class="logo shadowed">
   CLOUDBASE
 </a>
 
-<ul class="nav nav-pills pull-right shadowed" id="top-menu">
+<ul class="pull-right shadowed" id="top-menu">
   <li><a href="#" id="bar-link">Home</a></li>
   <li><a href="/console" id="bar-link">Login</a></li>
 </ul>
