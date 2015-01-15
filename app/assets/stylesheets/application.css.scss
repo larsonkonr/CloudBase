@@ -26,7 +26,13 @@
 
 #sidebar-text {
   font-size: 15px;
+  text-align: left;
+
 }
+.row{
+  margin-left:15px;
+}
+
 
 body {
   background-image: image_url("cloth.png");
@@ -237,10 +243,13 @@ ul, ol {
 */
 
 /* Links */
-a,
+a {
+  color: black;
+}
+
 a:focus,
 a:hover {
-  color: #fff;
+  color: #FFA206;
 }
 
 /* Custom default button */
@@ -262,28 +271,30 @@ a:hover {
   z-index: 999999;
   background-image: image_url("cloth2.png");
   min-height: 600px;
-  min-width: 600px;
+  margin-left:15px;
 }
 
 #file-text {
   font-size: 15px;
+  padding-top:15px;
+  padding-bottom:15px;
   color: black;
+  text-align: left;
+  text-shadow: 0px #000;
 }
 
-html body {
+body#main_page{
   /*css for full size background image*/
   background: image_url("rsz_sunset-clouds_00411248.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
   height: 100%;
   background-color: black;
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -478,7 +489,7 @@ html body {
 }
 
 aside .shadowed {
-  margin: 0 15px 15px;
+  margin: 0 0px 0px;
   padding: 12px;
 }
 
