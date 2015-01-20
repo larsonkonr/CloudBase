@@ -1,0 +1,25 @@
+<header id="header" class="clearfix">
+<a href="index.html" class="logo shadowed">
+  CLOUDBASE
+</a>
+<form class="form-inline top-search shadowed">
+  <input type="text" class="form-control" placeholder="Search for anything...">
+  <button type="submit"><i class="icon-search"></i></button>
+</form>
+</header>
+
+<header id="header" class="clearfix">
+<a href="index.html" class="logo shadowed">
+  CLOUDBASE
+</a>
+
+<ul class="nav nav-pills pull-right shadowed" id="top-menu">
+  <li><a href="index.html" class="logo shadowed">Home</a></li>
+  <li><a href="index.html" class="logo shadowed">Users</a></li>
+</ul>
+
+<form class="form-inline top-search shadowed">
+  <input type="text" class="form-control" placeholder="Search for anything...">
+  <button type="submit"><i class="icon-search"></i></button>
+</form>
+</header>

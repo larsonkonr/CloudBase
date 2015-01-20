@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-
+gem 'pg'
 gem 'rails', '4.1.7'
-gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -15,3 +14,6 @@ gem "bootstrap-sass"
 gem "autoprefixer-rails"
 gem "omniauth-google-oauth2", "~> 0.2.1"
 gem 'dotenv-rails', '~> 1.0.2', groups: [:development, :test]
+gem 'dropbox-sdk', '~> 1.6.4'
+gem 'execjs'
+gem 'therubyracer'

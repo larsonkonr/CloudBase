@@ -5,71 +5,82 @@
 
   <ul class="nav nav-pills pull-right shadowed" id="top-menu">
     <li><a href="#" id="bar-link">Home</a></li>
-    <li><a href="/" id="bar-link">Logout</a></li>
+    <li>  <% if current_user %>
+      <%= link_to "Sign out", signout_path, id: "bar-link" %>
+      <% else %>
+      <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "bar-link" %>
+      <% end %>
+
+      <!-- <a href="/" id="bar-link">Logout</a></li> -->
   </ul>
 
   <form class="form-inline top-search shadowed">
     <input type="text" class="form-control" placeholder="Search for anything...">
-    <button type="submit"><i class="icon-search"></i></button>
+    <button type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
   </form>
 </header>
 
 <div class="row">
 
-<aside id="leftbar" class="pull-left col-xs-2">
-  <div class="sidebar-container">
-    <!-- Main Menu -->
-    <ul class="side-menu shadowed">
-      <li>
-        <a href="/" id="sidebar-text"><img src="assets/google.png" height="20" width="20"/>  Google Drive</a>
-      </li>
-      <li>
-        <a href="/" id="sidebar-text"><img src="assets/DropBox.png" height="25" width="20"/> DropBox</a>
-      </li>
-      <li>
-        <a href="/" id="sidebar-text"><img src="assets/box.png" height="20" width="20"/> Box</a>
-      </li>
-      <li>
-        <a href="/" id="sidebar-text"><img src="assets/sugersync.png" height="20" width="20"/> SugarSync</a>
-      </li>
-      <li>
-        <a href="/" id="sidebar-text"><img src="assets/OneDrive.png" height="20" width="20"/> OneDrive</a>
-      </li>
-      <li>
-        <a href="/" id="sidebar-text"><img src="assets/mega.png" height="20" width="20"/> Mega</a>
-      </li>
-    </ul>
-  </div>
-  <span id="leftbar-toggle" class="visible-xs sidebar-toggle">
-    <i class="icon-angle-right"></i>
-  </span>
-</aside>
-  <div class="container col-xs-9" id="file-background">
-    <div id="file-text">
-    <div class="col-xs-3">
+  <aside id="leftbar" class="pull-left col-xs-2">
+    <div class="sidebar-container">
+      <!-- Main Menu -->
+      <ul class="side-menu shadowed">
+        <li>
+          <a href="/" id="sidebar-text"><img src="assets/google.png" height="20" width="20"/>  Google Drive</a>
+        </li>
+        <li>
+          <a href="/" id="sidebar-text"><img src="assets/DropBox.png" height="25" width="20"/> DropBox</a>
+        </li>
+        <li>
+          <a href="/" id="sidebar-text"><img src="assets/box.png" height="20" width="20"/> Box</a>
+        </li>
+        <li>
+          <a href="/" id="sidebar-text"><img src="assets/sugersync.png" height="20" width="20"/> SugarSync</a>
+        </li>
+        <li>
+          <a href="/" id="sidebar-text"><img src="assets/OneDrive.png" height="20" width="20"/> OneDrive</a>
+        </li>
+        <li>
+          <a href="/" id="sidebar-text"><img src="assets/mega.png" height="20" width="20"/> Mega</a>
+        </li>
+      </ul>
+    </div>
+    <span id="leftbar-toggle" class="visible-xs sidebar-toggle">
+      <i class="icon-angle-right"></i>
+    </span>
+  </aside>
+<div class="container col-xs-9" id="file-background">
+  <div id="file-text">
+    <div class="col-xs-2 file-name">
+      FILENAME <br>
       <% 30.times do %>
-      <a href="#">Filename_<%= rand(10000..30000) %>-<%= rand(10000..30000) %>.pdf</a><br>
+      <a href="#">Filename_<%= rand(10000..30000) %>.pdf</a><br>
       <% end %>
     </div>
     <div class="col-xs-2">
+      FILE SIZE <br>
       <% 30.times do %>
       <a href="#"> File Size_<%= rand(50..330) %>mb</a><br>
       <% end %>
     </div>
 
-    <div class="col-xs-2">
+    <div class="col-xs-3">
+      DATE ADDED <br>
       <% 30.times do %>
       <a href="#">Date Added <%= Date.today+(10000*rand()) %></a><br>
       <% end %>
     </div>
 
     <div class="col-xs-3">
+      DATE UPDATED <br>
       <% 30.times do %>
       <a href="#">Date Updated <%= Date.today+(10000*rand()) %></a><br>
       <% end %>
     </div>
 
     <div class="col-xs-2">
+      OPTIONS <br>
       <% 30.times do %>
       <img src="assets/download.png" height="20" width="20"/><img src="assets/delete.png" height="10" width="10"/>
       <br>
@@ -77,5 +88,5 @@
     <div>
     <br>
     </div>
+    </div>
   </div>
-</div>

@@ -1,0 +1,53 @@
+
+  <div id="dropbox-img-div">
+    <img src="assets/DropBox.png" id="dropbox-img" alt="" height="200" width="200"/>
+  </div>
+  <div id="google-img-div">
+    <img src="assets/google.png" id="google-img" alt="" height="200" width="200"/>
+  </div>
+  <div id="box-img-div">
+    <img src="assets/box.png" id="box-img" alt="" height="200" width="200"/>
+  </div>
+  <br>
+  <div id="title">
+    One cloud to rule them all
+  </div>
+  <br>
+  <div id="mega-img-div">
+    <img src="assets/mega.png" id="mega-img" alt="" height="200" width="200"/>
+  </div>
+  <div id="sugersync-img-div">
+    <img src="assets/sugersync.png" id="sugersync-img" alt="" height="200" width="200"/>
+  </div>
+  <div id="onedrive-img-div">
+    <img src="assets/OneDrive.png" id="onedrive-img" alt="" height="200" width="200"/>
+  </div>
+
+
+#box-img-div{
+  transform: rotate(30deg);
+  padding: 25px 25px 25px 25px;
+}
+
+#dropbox-img-div{
+  transform: rotate(330deg);
+  padding: 25px 25px 25px 25px;
+}
+
+#google-img-div{
+  padding: 25px 25px 75px 25px;
+}
+
+#mega-img-div{
+  transform: rotate(30deg);
+  padding: 25px 25px 25px 25px;
+}
+
+#onedrive-img-div{
+  transform: rotate(330deg);
+  padding: 25px 25px 25px 25px;
+}
+
+#sugersync-img-div{
+  padding: 75px 25px 25px 25px;
+}
