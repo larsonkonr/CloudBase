@@ -17,3 +17,4 @@ gem 'dotenv-rails', '~> 1.0.2', groups: [:development, :test]
 gem 'dropbox-sdk', '~> 1.6.4'
 gem 'execjs'
 gem 'therubyracer'
+gem 'dotenv-deployment'
