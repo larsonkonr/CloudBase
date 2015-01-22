@@ -6,6 +6,7 @@
 
 <ul class="nav nav-pills pull-right shadowed" id="top-menu">
   <li><a href="#" id="bar-link">Home</a></li>
+  <li><a href="/console" id="bar-link">Console</a></li>
   <li><% if current_user %>
     <%= link_to "Sign out", signout_path, id: "bar-link" %>
     <% else %>
@@ -14,10 +15,6 @@
     <!-- <a href="/console" id="bar-link">Login</a></li> -->
 </ul>
 
-<form class="form-inline top-search shadowed">
-  <input type="text" class="form-control" placeholder="Search for anything...">
-  <button type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-</form>
 </header>
 <!-- <img src="assets/Personal-Cloud-Storage.jpg" alt="" height="700" width="100%"/> -->
 <div id="page">

@@ -15,3 +15,24 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+
+
+
+$(document).ready(function(){
+	function initializeSearchBar() {
+		var bar = $("#search-bar");
+		bar.keyup(function(){
+			$('.search-item').hide().filter(function(){
+				var itemText = $(this).text().toLowerCase();
+				var searchText = $('#search-bar').val().toLowerCase();
+				var filterMatch = itemText.indexOf(searchText) != -1;
+				return filterMatch;
+			}).show();
+		});
+	}
+
+	console.log("doc ready");
+	initializeSearchBar();
+	$("#fileTable").tablesorter();
+});

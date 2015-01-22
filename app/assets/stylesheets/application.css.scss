@@ -16,6 +16,22 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+#file-table-name{
+  padding-right:30px
+}
+
+#file-table-size{
+  padding-right:30px
+}
+
+#file-table-added{
+  padding-right:30px
+}
+
+#file-table-updated{
+  padding-right:30px
+}
+
 #myModal{
   z-index:99;
 }
@@ -282,6 +298,7 @@ a:hover {
   min-height: 600px;
   margin-left:15px;
   left: 15px;
+  padding-left: 0px;
 }
 
 #file-text {
